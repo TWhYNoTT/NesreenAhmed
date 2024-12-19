@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <div class="register-page">
+        <div class="register">
+            <div class="img-register">
+                <img src="./images/reg1.png" alt="" width="200">
+            </div>
+            <div class="data-register">
+                <form action="" id="registerForm">
+                    <h2>Registration Form</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Your Name">
+                        <div id="nameError" class="errors">Invalid name, Must be at least 3 characters</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Your Email">
+                        <div id="emailError" class="errors">Invalid email, Enter vaild email</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone">Phone:</label>
+                        <input type="number" id="phone" placeholder="Your phone">
+                        <div id="phoneError" class="errors">Invalid phone, Enter vaild egypt phone</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Your Password">
+                        <div id="passwordError" class="errors">Invalid password,Minimum eight characters, at least one
+                            letter and one number </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                        <div id="confirmPasswordError" class="errors">Invalid confirm password , musyt be match password
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">Register</button>
+                    <div id="registerMessage" class="success"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/auth.js"></script>
+</body>
+
+</html>
