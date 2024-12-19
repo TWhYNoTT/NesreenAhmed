@@ -89,6 +89,17 @@ const DB = {
 document.addEventListener('DOMContentLoaded', () => {
     DB.init();
     updateAuthUI();
+    // Add this to your JavaScript file or <script> tag
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+
+
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 });
 
 
@@ -298,3 +309,6 @@ function showNotification(message, type = 'success') {
     document.body.appendChild(notification);
     setTimeout(() => notification.remove(), 3000);
 }
+
+
+
