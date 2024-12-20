@@ -52,7 +52,7 @@ const DetailsManager = {
             <div class="">
                 <img src="./images/${product.imageSrc}" alt="${product.name}">
             </div>
-            <div class="details">
+            <div class="detailss">
                 <h3>${product.name}</h3>
                 <h3 class="category">${product.category}</h3>
                 <h4 class="price">$${product.price.toFixed(2)}</h4>
@@ -65,11 +65,11 @@ const DetailsManager = {
                 </p>
                 ${product.stock > 0 ? `
                    
-                    <button class="btn-details" onclick="DetailsManager.addToCart()">
+                    <button class="btn-detailss" onclick="DetailsManager.addToCart()">
                         Add to Cart
                     </button>
                 ` : `
-                    <button class="btn-details" disabled>Out of Stock</button>
+                    <button class="btn-detailss" disabled>Out of Stock</button>
                 `}
             </div>`;
     },

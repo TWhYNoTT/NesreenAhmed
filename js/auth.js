@@ -1,11 +1,14 @@
 const navbar = document.getElementById('navbar');
 const humgerButton = document.getElementById('humgerButton');
-console.log(navbar);
-console.log(humgerButton);
 
-humgerButton.addEventListener('click', () => {
-    navbar.classList.toggle('active')
-})
+if (navbar) {
+    if (humgerButton) {
+
+        humgerButton.addEventListener('click', () => {
+            navbar.classList.toggle('active')
+        })
+    }
+}
 
 
 
@@ -104,13 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 
+    if (scrollToTopBtn) {
 
-    scrollToTopBtn.addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+        scrollToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
-    });
+    }
 });
 
 
