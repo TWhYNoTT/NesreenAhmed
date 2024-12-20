@@ -176,6 +176,10 @@ input {
 
     .navbar.active ul {
         display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 10px 0px;
+        height: 90vh;
 
     }
 

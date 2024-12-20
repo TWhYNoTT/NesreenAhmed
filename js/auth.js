@@ -1,3 +1,14 @@
+const navbar = document.getElementById('navbar');
+const humgerButton = document.getElementById('humgerButton');
+console.log(navbar);
+console.log(humgerButton);
+
+humgerButton.addEventListener('click', () => {
+    navbar.classList.toggle('active')
+})
+
+
+
 
 
 
